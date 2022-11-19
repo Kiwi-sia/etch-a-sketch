@@ -35,6 +35,7 @@ newRainbow[0].addEventListener("click", () => {
 	setRandomColors();
 });
 
+//Getting grid size from user input
 function getNumberOfBoxes() {
 	let numberOfBoxes = prompt("How many boxes per row?");
 	if (numberOfBoxes > 100 || numberOfBoxes <= 0) {
@@ -45,6 +46,7 @@ function getNumberOfBoxes() {
 	}
 }
 
+//Setting a custom grid
 function rebuildGrid(numberOfBoxes) {
 	clearGrid();
 	let newWidth = 100 / numberOfBoxes;
